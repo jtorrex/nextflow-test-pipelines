@@ -1,17 +1,11 @@
 
 
-process openfoamcompletepipeline {
+process openfoam-complete-pipeline {
     echo true
 
     script:
     """
-    surfaceFeatures
-    blockMesh
-    decomposePar -copyZero
-    snappyHexMesh -overwrite parallel
-    potentialFoam -parallel
-    simpleFoam -parallel
-    reconstructParMesh -constant
-    reconstructPar -latestTime
+    cd /data/motorBike
+    ls
     """
 }
