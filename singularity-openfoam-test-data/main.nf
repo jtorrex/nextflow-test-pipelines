@@ -1,9 +1,10 @@
+
+
 process openfoamcompletepipeline {
     echo true
 
     script:
     """
-    
     surfaceFeatures
     blockMesh
     decomposePar -copyZero

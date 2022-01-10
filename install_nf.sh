@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install Nextflow
 curl -s https://get.nextflow.io | bash
 
