@@ -5,6 +5,9 @@ process demo {
 
     script:
     """
+    echo "Whoami"
+    id
+    echo ""
     rm -rf /tmp/tmp-mounted
     echo "Creating tmp directory"
     mkdir /tmp/tmp-mounted
