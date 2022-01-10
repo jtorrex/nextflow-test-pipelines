@@ -1,6 +1,6 @@
 
 
-process openfoam-complete-pipeline {
+process openfoamcompletepipeline {
     echo true
 
     script:
