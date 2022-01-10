@@ -51,7 +51,7 @@ process openFoamSnappyHexMesh {
     """
 }
     
-process openFoampotentialFoam {
+process openFoamPotentialFoam {
     echo true
     script:
     """
