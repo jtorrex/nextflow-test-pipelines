@@ -1,5 +1,27 @@
-process openFoam {
+#!/usr/bin/env nextflow
+
+//This is a comment
+
+/*
+* This is a block of comments
+*/
+
+// This is needed for activating the new DSL2
+nextflow.enable.dsl=2
+
+// Channel my_files reading from localpath
+//Channel
+//    .fromPath("*.txt")
+//    .set {my_files}
+//
+//my_files.view()
+
+process openFoamFull {
+
     echo true
+
+    output: stdout
+
     script:
     """
     echo "Enter working directory..."
