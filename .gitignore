@@ -1,4 +1,5 @@
 **.nextflow**
+**secrets**
 **work**
 **.sif
 singularity-images/*.sif
